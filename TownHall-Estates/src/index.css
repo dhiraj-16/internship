@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+ 
+  .dropdown {
+    @apply w-full lg:max-w-[296px] cursor-pointer;
+  }
+  .dropdown-btn {
+    @apply flex h-[64px] items-center px-[18px] border rounded-lg;
+  }
+  .dropdown-icon-primary {
+    @apply text-2xl mr-[18px] text-violet-700;
+  }
+  .dropdown-icon-secondary {
+    @apply text-2xl text-violet-700 ml-auto;
+  }
+  .dropdown-menu {
+    @apply px-6 py-8 text-[15px] space-y-6 shadow-md absolute w-full z-10 list-none rounded-b-lg;
+  }
+}
+
+.circled-icon {
+  @apply h-10 w-10 fill-current text-violet-500 hover:text-blue-500 border p-2 border-gray-400 rounded-full hover:border-blue-500;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+
+body{
+  margin: 0px;
+    padding: 0px;
+    /* background-color: white; */
+    background-image:linear-gradient(0deg, rgb(255, 255, 255), rgba(171, 99, 254, 0.288)) ,url("../src/Assets/bg-body.png") !important;
+    background-attachment: fixed;
+    /* background-blend-mode: lighten; */
+    width: 100%;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  outline: none;
+  border: none;
+}
+input {
+  outline: none;
+  border: none;
+}
+.logo img {
+  width: 80px;
+}
+::-webkit-scrollbar-track {
+  visibility: hidden;
+  background: transparent;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#6a0ddb, transparent);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#3d0fc8e2, transparent);
+}
